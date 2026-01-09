@@ -1,8 +1,9 @@
-
+-- Project: SQL Mentor:
 -- SQL Mentor User Performance
 
 -- DROP TABLE user_submissions; 
 
+-- Creating the user_submissions table and inserting data
 CREATE TABLE user_submissions (
     id SERIAL PRIMARY KEY,
     user_id BIGINT,
@@ -116,6 +117,7 @@ FROM
 	ORDER BY week_no, total_points_earned DESC
 )
 WHERE rank <= 10
+
 
 
 -- THE END --
